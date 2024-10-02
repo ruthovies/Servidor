@@ -1,8 +1,16 @@
+
+
 <?php
- $pets = array('perro' => "Yunito",
- 'gato' => "Wilson",
- 'canario' => "Piolin",
- 'tortuga' => "Pepe");
- foreach($pets as $item => $description)
- echo "$item: $description<br>";
+ $mascotas = array(
+    'Perro' => array('Mastin' => "Yunito", 'Salchicha' => "Fuet", 'Chiguagua' => "Sarnoso"),
+    'Gato' => array('Persa' => "Otis", 'Comun' => "Garfield", 'Siames' => "Princesa")
+);
+ foreach($mascotas as $animal => $tipo){
+    echo $animal. ": <br>";
+
+    foreach($tipo as $raza => $nombre){
+        echo $raza. ":" .$nombre. "<br>";
+     }
+
+}
 ?> 
