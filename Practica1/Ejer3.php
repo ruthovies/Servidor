@@ -6,5 +6,16 @@ doble de una hora normal cuando no exceden de 8; si las horas extras exceden de
 al triple -->
 
 <?php
+$jornada=40; 
+$salHora=30;
+$horasTrabj=55;
 
+$extras=$horasTrabj-$jornada;
+if($extras>8){
+    $salario=8*$salHora*2+($extras-8)*$salHora*3; //Preguntar esta parte del codigo
+}else{
+    $salario=$extras*$salHora*2;
+}
+echo "Horas Extras: $extras <br>";
+echo "Salario: $salario";
 ?>
