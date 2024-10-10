@@ -4,7 +4,7 @@ indique si es primo. Un número primo es aquel que es divisible por el mismo y l
 unidad.*/
 
 $num1 = rand(1, 1000);
-echo "Numero aleatorio: " .&num1;
+echo "Numero aleatorio: " .$num1;
 $esPrimo = true;
 
 for($i=1;$i<=$num1;$i++){
