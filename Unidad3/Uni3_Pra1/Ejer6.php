@@ -29,5 +29,5 @@ for($i=0;$i<4;$i++){
 }
 echo "El elemento mayor es $Max";
 echo "<br>";
-echo "Se encuentra en la posicion $Maxi, $Maxj";
+echo "Se encuentra en la posicion [$Maxi, $Maxj]";
 ?>
