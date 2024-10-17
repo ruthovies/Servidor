@@ -1,35 +1,31 @@
 <?php
-
-if(isset($POST['nombre'])){
-    echo "Nombre" .$POST ['nombre'];
-    echo "Apellido" .$POST ['apellido'];
-
+if(isset ($_POST['nombre'])){
+echo "Nombre ".$_POST['nombre'];
+echo "Apellidos ".$_POST['apellido'];
 }else{
+   
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
 
-    ?>
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario de Datos</title>
-    </head>
-    <body>
+        <label for="apellido">Apellidos: </label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
 
-        <h2>Formulario:</h2>
-
-        <form action="test.php" method="GET">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-
-            <label for="apellidos">Apellidos:</label><br>
-            <input type="text" id="apellidos" name="apellidos" required><br><br>
-
-            <input type="submit" value="Enviar">
-        </form>
-
-    </body>
-    </html>
-<?php
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+<?php //TODO EN UNO, SIN TENER Q SEPARAR EN DOS ARCHIVOS
 }
+
 ?>
