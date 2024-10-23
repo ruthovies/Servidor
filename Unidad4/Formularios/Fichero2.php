@@ -25,7 +25,7 @@ echo "Apellidos ".$_POST['apellido'];
     </form>
 </body>
 </html>
-<?php //TODO EN UNO, SIN TENER Q SEPARAR EN DOS ARCHIVOS
+<?php 
 }
 
 ?>
