@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de Calendario</h1>
+    
+    <!-- Formulario para introducir el mes y el año -->
+    <form method="post" action="">
+        <label for="mes">Mes:</label>
+        <input type="number" name="mes" id="mes" min="1" max="12" required placeholder="Mes (1-12)">
+        <label for="año">Año:</label>
+        <input type="number" name="año" id="año" min="1900" max="2100" required placeholder="Año">
+        <input type="submit" value="ENVIAR">
+    </form>
+
+  
+
+</body>
+</html>

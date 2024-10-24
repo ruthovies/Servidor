@@ -1,0 +1,24 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+</head>
+<body>
+
+    <h2>Calculadora:</h2>
+
+    <form action="Resultado.php" method="post">
+        <label for="a">A:</label><br>
+        <input type="number" id="a" name="a" required min = "1"><br><br>
+        <label for="b">B:</label><br>
+        <input type="number" id="b" name="b" required min = "1"><br><br>
+
+        <button type="submit" name = "operacion" value="1">Suma</button>
+        <button type="submit" name = "operacion" value="2">Resta</button>
+        <button type="submit" name = "operacion" value="3">Multiplicación</button>
+        <button type="submit" name = "operacion" value="4">División</button>
+    </form>
+
+</body>
+</html>
