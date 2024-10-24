@@ -5,7 +5,7 @@ mostrado debajo muestre el siguiente resultado: -->
 //Incluir la clase Operaciones
 include 'Operaciones.php';
 
-//Crear la clase Operaciones
+//Crear la clase Operar
 $operar = new Operaciones(50,20);
 
 //Mostrar el objeto operar, usa el metodo toString
