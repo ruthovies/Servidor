@@ -1,0 +1,66 @@
+<!-- Crear un formulario (se ha de hacer con un bucle FOR con el que se crearán las 9
+cajas de texto), además tendrá un botón ENVIAR que al pulsarlo mostrará los
+elementos del vector y su suma. Debajo del resultado se han de mostrar de nuevo las
+9 cajas de texto para poder repetir el proceso, se ha de resolver con un script: -->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 9 cajas</title>
+</head>
+<body>
+
+    <h2>Formulario:</h2>
+    <div id="formulario-container"></div>
+    <div id="resultado"></div>
+
+    <script>
+        // Función para crear el formulario
+        function crearFormulario() {
+            // Contenedor del formulario
+            const container = document.getElementById("formulario-container");
+            container.innerHTML = ""; // Limpiar contenido anterior
+
+            // Crear las 9 cajas de texto usando un bucle for
+            for (let i = 0; i < 9; i++) {
+                const input = document.createElement("input");
+                input.type = "number";
+                input.id = "input" + i;
+                input.placeholder = "Número " + (i + 1);
+                container.appendChild(input);
+                container.appendChild(document.createElement("br"));
+            }
+
+            // Crear el botón de envío
+            const botonEnviar = document.createElement("button");
+            botonEnviar.textContent = "ENVIAR";
+            botonEnviar.onclick = mostrarResultado;
+            container.appendChild(botonEnviar);
+        }
+
+        // Función para mostrar el resultado
+        function mostrarResultado() {
+            const valores = [];
+            let suma = 0;
+
+            // Obtener los valores de las cajas de texto y calcular la suma
+            for (let i = 0; i < 9; i++) {
+                const valor = parseFloat(document.getElementById("input" + i).value) || 0;
+                valores.push(valor);
+                suma += valor;
+            }
+
+            // Mostrar los valores y la suma en el contenedor de resultados
+            const resultadoDiv = document.getElementById("resultado");
+            resultadoDiv.innerHTML = `<p>Valores ingresados: ${valores.join(", ")}</p><p>Suma total: ${suma}</p>`;
+
+            // Crear el formulario nuevamente para repetir el proceso
+            crearFormulario();
+        }
+
+        // Inicializar el formulario al cargar la página
+        crearFormulario();
+    </script>
+</body>
+</html>
