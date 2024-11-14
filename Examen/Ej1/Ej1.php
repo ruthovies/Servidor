@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Mostrar los resultados
     echo "<h2>Resultados en binario</h2>";
-    echo "<table border='1' cellpadding='5'>";
+    echo "<table border='1' cellpadding='5'>"; //Creacion de la tabla
     for ($i = 0; $i < 2; $i++) {
         echo "<tr>";
         for ($j = 0; $j < 3; $j++) {
@@ -46,8 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } else {
     // Mostrar el formulario si no se ha enviado aún
     echo "<h2>Introduzca números en la matriz 2x3</h2>";
-    echo "<form method='POST' action='ejercicio1.php'>";
-    echo "<table cellpadding='5'>";
+    echo "<form method='POST' action='#'>";
+    echo "<table cellpadding='5'>"; //Creacion de la tabla
 
     // Crear la matriz 2x3 utilizando bucles
     for ($i = 0; $i < 2; $i++) {
@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<form action="Ej1.php" method="post">
+<form action="#" method="post">
 </form>
 
 </body>
