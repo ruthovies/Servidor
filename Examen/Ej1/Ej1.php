@@ -43,11 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     echo "</table>";
 
-} else {
-    // Mostrar el formulario si no se ha enviado aún
-    echo "<h2>Introduzca números en la matriz 2x3</h2>";
-    echo "<form method='POST' action='#'>";
-    echo "<table cellpadding='5'>"; //Creacion de la tabla
+} else {    
 
     // Crear la matriz 2x3 utilizando bucles
     for ($i = 0; $i < 2; $i++) {
@@ -57,8 +53,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         echo "</tr>";
     }
-
-    echo "</table><br>";
     echo "<button type='submit'>Calcular</button>";
     echo "</form>";
 }
@@ -66,6 +60,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <form action="#" method="post">
 </form>
+ <table> 
+    <tr>
+        <td>E.0.0<input type="number" name="valor00" required></td>
+        <td>E.1.0<input type="number" name="valor01" required></td>
+        <td>E.2.0<input type="number" name="valor02" required></td>
+    </tr>
+    <tr>
+        <td>E.0.1<input type="number" name="valor10" required></td>
+        <td>E.0.2<input type="number" name="valor11" required></td>
+        <td>E.0.3<input type="number" name="valor12" required></td>
+    </tr>
+</table>
 
 </body>
 </html>
