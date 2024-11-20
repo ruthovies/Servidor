@@ -15,6 +15,7 @@
         <label for="contra">Contraseña:</label><br>
         <input type="password" id="contra" name="contra" required><br><br> <!-- Usamos type="password" para que al poner la contraseña salgan puntitos -->
 
+        <a href="Registro.php">¿No tienes cuenta? Registrate aquí</a><br><br> <!-- Enlace para ir al otro fichero -->
         <input type="submit" value="Entrar">
     </form>
 
