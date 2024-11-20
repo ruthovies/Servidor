@@ -22,26 +22,12 @@ for ($i=0; $i<4; $i++) {
 <h2>El numero en BINARIO: <?php foreach($bin as $num){echo $num;}?></h2>
 <?php
     for ($i = 0; $i < 4; $i++) {
-        switch ($bin[$i]) {
-            case 1:
-                switch ($potencias[$i]) {
-                    case 8:
-                        echo "<img src='img/ocho.jpg'>";
-                        break;
-                    case 4:
-                        echo "<img src='img/cuatro.jpg'>";
-                        break;
-                    case 2:
-                        echo "<img src='img/dos.jpg'>";
-                        break;
-                    case 1:
-                        echo "<img src='img/uno.jpg'>";
-                        break;
-                }
-                break;
-            case 0:
-                echo "<img src='img/blanco.jpg'>";
-                break;
+        for ($i = 0; $i < 4; $i++) {
+            if ($bin[$i] == 1) {
+                echo "<img src='img/" . $potencias[$i] . ".JPG' alt='Carta " . $potencias[$i] . "'>";
+            } else {
+                echo "<img src='img/blanco.JPG' alt='Carta 0'>";
+            }
         }
     }
 ?>
