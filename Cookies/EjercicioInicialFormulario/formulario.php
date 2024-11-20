@@ -1,6 +1,8 @@
 <?php
 
 // Verificar si existe la cookie "color_fondo"
+
+
 $color_fondo = isset($_COOKIE['color_fondo']) ? $_COOKIE['color_fondo'] : 'white';
 
 // if(isset($_COOKIE['color_fondo'])){
