@@ -7,6 +7,7 @@
  if (!$result) die("Fatal Error");
  $rows = $result->num_rows;
  for ($j = 0 ; $j < $rows ; ++$j)
+ 
  {
  $result->data_seek($j);
  echo 'ID: ' .htmlspecialchars($result->fetch_assoc()['Id']) .'<br>';
@@ -18,6 +19,7 @@
  echo 'Rol: '. htmlspecialchars($result->fetch_assoc()['Rol'])
 .'<br><br>';
  } 
+
  $result->close();
  $connection->close();
 ?>
