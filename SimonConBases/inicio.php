@@ -32,18 +32,6 @@ function color() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon</title>
-    <style>
-        .circulos {
-            display: flex;
-        }
-        .circulo {
-            width: 100px;       
-            height: 100px;      
-            border-radius: 50%; 
-            
-        }
-        
-    </style>
 </head>
 <body>
     <h1>SIMÓN</h1>
